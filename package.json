@@ -26,6 +26,17 @@
           "type": "webview"
         }
       ]
+    },
+    "configuration": {
+      "type": "object",
+      "title": "GIF Rot Settings",
+      "properties": {
+        "gifRot.gifUrl": {
+          "type": "string",
+          "default": "",
+          "description": "URL of the GIF to display in the GIF Rot view."
+        }
+      }
     }
   },
   "scripts": {
