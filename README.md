@@ -1,7 +1,7 @@
 # GifRot README
 
 GifRot is a simple Visual Studio Code extension that displays a GIF inside a dedicated sidebar view.
-Users can change the GIF by providing any direct GIF URL through the extension's view actions.
+Users can change the GIF by providing any direct GIF URL (ending with **`.gif`**) through the extension's view actions.
 
 ## Features
 
