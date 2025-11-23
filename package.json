@@ -3,7 +3,7 @@
   "displayName": "GifRot",
   "publisher": "Realm",
   "description": "A fun GIF viewer panel for vscode",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "icon": "logo.png",
   "repository": {
