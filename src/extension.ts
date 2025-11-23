@@ -67,7 +67,7 @@ class GifViewProvider implements vscode.WebviewViewProvider {
       .get<string>("gifUrl");
 
     const fallbackUri = webview.asWebviewUri(
-      vscode.Uri.joinPath(this.context.extensionUri, "media", "giphy.gif")
+      vscode.Uri.joinPath(this.context.extensionUri, "media", "gifrot.gif")
     );
 
     const gifToShow =

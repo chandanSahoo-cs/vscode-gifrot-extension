@@ -1,8 +1,9 @@
 {
-  "name": "git-rot",
-  "displayName": "git-rot",
-  "description": "",
+  "name": "gifrot",
+  "displayName": "GifRot",
+  "description": "A fun GIF viewer panel for vscode",
   "version": "0.0.1",
+  "icon": "logo.png",
   "engines": {
     "vscode": "^1.106.1"
   },
@@ -21,6 +22,7 @@
     "views": {
       "explorer": [
         {
+          "icon": "logo.png",
           "id": "gifRotView",
           "name": "GIF Rot",
           "type": "webview"
