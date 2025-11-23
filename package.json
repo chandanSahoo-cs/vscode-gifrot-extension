@@ -4,6 +4,10 @@
   "description": "A fun GIF viewer panel for vscode",
   "version": "0.0.1",
   "icon": "logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chandanSahoo-cs/GifRot.git"
+  },
   "engines": {
     "vscode": "^1.106.1"
   },
