@@ -8,33 +8,25 @@ export function activate(context: vscode.ExtensionContext) {
   );
 
   context.subscriptions.push(
-    vscode.commands.registerCommand("gif-rot.showView", () => {
-      vscode.commands.executeCommand("workbench.view.explorer").then(() => {
-        vscode.commands.executeCommand("workbench.view.extension.gifRotView");
-      });
+    vscode.commands.registerCommand("gifRotView.refresh", () => {
+      provider.refresh();
     })
   );
 
   context.subscriptions.push(
-    vscode.commands.registerCommand("gif-rot.addGifUrl", async () => {
+    vscode.commands.registerCommand("gif-rot.changeGif", async () => {
       const url = await vscode.window.showInputBox({
         prompt: "Enter a GIF URL",
         placeHolder: "https://example.com/my.gif",
       });
 
-      if (!url) return;
+      if (url) {
+        await vscode.workspace
+          .getConfiguration("gifRot")
+          .update("gifUrl", url, vscode.ConfigurationTarget.Global);
 
-      await context.globalState.update("gifRot.currentGif", url);
-      vscode.window.showInformationMessage("GIF updated!");
-
-      // Refresh the webview
-      vscode.commands.executeCommand("gifRotView.refresh");
-    })
-  );
-
-  context.subscriptions.push(
-    vscode.commands.registerCommand("gifRotView.refresh", () => {
-      provider.refresh();
+        provider.refresh();
+      }
     })
   );
 

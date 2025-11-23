@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "gif-rot.showView",
-        "title": "Show GIF Rot View"
+        "command": "gif-rot.changeGif",
+        "title": "Change GIF URL"
       }
     ],
     "views": {
@@ -37,6 +37,15 @@
           "description": "URL of the GIF to display in the GIF Rot view."
         }
       }
+    },
+    "menus": {
+      "view/title": [
+        {
+          "command": "gif-rot.changeGif",
+          "when": "view == gifRotView",
+          "group": "navigation"
+        }
+      ]
     }
   },
   "scripts": {
