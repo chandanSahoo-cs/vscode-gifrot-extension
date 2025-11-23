@@ -19,7 +19,7 @@ GifRot stores the GIF URL using VS Code’s global state.
 
 ## Release Notes
 
-### 1.0.0
+### 0.0.1
 
 - Initial release
 - Sidebar view with GIF rendering
