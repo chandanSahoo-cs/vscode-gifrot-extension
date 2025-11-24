@@ -10,7 +10,7 @@ Users can change the GIF by providing any direct GIF URL (ending with **`.gif`**
 - Supports any direct GIF link
 - Remembers the last selected GIF between sessions
 
-![screenshot](media/screenshot-1.jpeg)
+![screenshot](media/screenshot-1.png)
 
 
 ## Extension Settings

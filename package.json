@@ -3,7 +3,7 @@
   "displayName": "GifRot",
   "publisher": "Realm",
   "description": "A fun GIF viewer panel for vscode",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "license": "MIT",
   "icon": "logo.png",
   "repository": {
@@ -83,6 +83,6 @@
     "typescript-eslint": "^8.46.3"
   },
   "dependencies": {
-    "@vscode/vsce": "^3.7.0"
+    "@vscode/vsce": "^3.7.1"
   }
 }
